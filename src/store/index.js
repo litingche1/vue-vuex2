@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
-
+//遍历文件夹下面的文件
 function requireModules(modulesFiles) {
   const modules = modulesFiles.keys().reduce((modules, modulePath) => {
     const moduleName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1');
